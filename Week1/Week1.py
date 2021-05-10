@@ -192,8 +192,8 @@ chart = (alt.Chart(data)
   .facet(row = "cyl"))
  # %%
  #Exercise 3.6 USE https://altair-viz.github.io/user_guide/marks.html for reference
-
- chart = (alt.Chart(data)
+ 
+chart = (alt.Chart(data)
     .encode(
         x='displ',
         y='hwy',

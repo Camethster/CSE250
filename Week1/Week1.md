@@ -13,7 +13,7 @@ The Introduction week is where the class is getting all our environments set up,
 
 ![Reading Chart](Week1.png)
 
-The following chart is of the diamonds dataset. Using the various methods discussed in the readings this shows the number of records for each of the cuts seperated by clarity. Clarity is also color coded in the plot.dogs reate a python script and use VS Code to create the example Altair chart in the assigned readings (note that you have to type chart to see the Altair chart after you run the code). Save your Altair chart for submission.
+The following chart is of the diamonds dataset. Using the various methods discussed in the readings, I created a plot that shows the number of records for each of the cuts separated by clarity. Clarity is also color-coded in the graph.
 
 
 ### 1. Finish the readings and come to class prepared with any questions to get your environment working smoothly.
