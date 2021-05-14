@@ -129,6 +129,8 @@ name_overlay =(alt.Chart(wars)
     y = 'y'
     )
 )
+
+
 names_chart= names_chart + name_overlay
 
 # %%
@@ -148,3 +150,53 @@ names_chart
 #Movie  Names
 
 # Famous Movie
+# Wizard of Oz
+# 1939 1949 rerealease
+name = "Dorothy"
+oz_name = names.query('name == @name')
+oz_name['color'] = oz_name.year >  (pd.to_datetime(1930, format='%Y'))
+release =  (pd.to_datetime(1939, format="%Y"))
+oz_name['color'] = np.where((oz_name.year > release),'gray','yellow')
+rerelease =  (pd.to_datetime(1949, format="%Y"))
+oz_name['color'] = np.where((oz_name.year > rerelease),'make',oz_name.color)
+oz_name.color
+
+dates = pd.DataFrame({
+    "dates" : [(pd.to_datetime(1939, format="%Y")),(pd.to_datetime(1949, format="%Y"))],
+    "text" : ["Release","Rerelease"],
+    'y' : [15000,10000]
+    })
+
+# %%
+oz_base = (alt.Chart(oz_name, title='Wizard of Oz was Effected by the Popularity of the Name Dorothy')
+    .mark_area()
+    .encode(
+        alt.X('year:T', title = "Year"),
+        alt.Y('Total:Q',title="Number of Names"),
+        color = 'color'
+    )
+    .properties(width=600,height=350)
+)
+
+oz_pt_overlay =(alt.Chart(oz_name.query('year == @release | year == @rerelease'))
+    .mark_point(align='left',dy = -10)
+    .encode(
+    x = 'year',
+    y = 'Total'
+    )
+)
+oz_nm_overlay =(alt.Chart(dates)
+    .mark_text(align='left',dy = -10)
+    .encode(
+    text = 'text',
+    x = 'dates',
+    y = 'y'
+    )
+)
+
+
+# %%
+famous_name = oz_base + oz_nm_overlay + oz_pt_overlay
+# %%
+famous_name.save("famousname.png")
+# %%
