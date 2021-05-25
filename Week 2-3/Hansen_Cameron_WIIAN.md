@@ -16,8 +16,6 @@ Cameron Hansen
 
 4. Think of a unique name from a famous movie.  Plot that name and see how increases line up with the movie release.
 
-
-
 ## TECHNICAL DETAILS
 
 ![Year Comparison](Campoint.png)
@@ -35,7 +33,7 @@ Looking at this line graph, we can see peaks in its usage. The dates are similar
 
 ![Movie Name](famousname.png)
 
-The name 'Dorothy' from Wizard of Oz. The release of the movies seem to have no relation to the popularity in the name. 
+The name 'Dorothy' from Wizard of Oz. The release of the movies has no relation to the popularity in the name. 
 
 #### How does your name at your birth year compare to its use historically?
   
@@ -53,9 +51,9 @@ I noticed in the naming of Christian names that they go through similar troughs 
 
 ### Think of a unique name from a famous movie. Plot that name and see how increases line up with the movie release.
 
-After thinking of early influential movies, I came to conclusion that  Wizard of Oz mightbe one of those movies I remembering it being one of the first wide released films in color.  The  main characters name is Dorothy, so I wanted to see if there was a connection. 
+After thinking of early influential movies, I concluded that  Wizard of Oz might be influential because it was one of the first widely released films in color. The main character's name is Dorothy, so I wanted to see if there was a connection. 
 
-I would think that a historical film would have a major influence, but the opposite is true. The movie is influence by the popularity in the name there is a small peak or two before the rerelease.  
+I would think that a historical film would have a major influence, but the opposite is true. The movie was influenced by the popularity in the name.
 
 ...
 
